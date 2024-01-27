@@ -13,6 +13,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
 :root {
   --blue: #1e549f;
   --indigo: #695aa6;
@@ -42,7 +43,10 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Open Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
 }
+
+
 
 *,
 *::before,
@@ -60,6 +64,88 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+}
+
+.dark-theme{
+  background-color: #212529;
+
+      .header{
+        position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      /* background-image: url(../imgs/header.jpg); */
+      background-image: url(../imgs/header.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      }
+
+      .service-card .body img.icon.write {
+        margin-top: 40px;
+        width: 55px;
+        margin-bottom: 25px;
+        -webkit-transition: all, 0.3s;
+        transition: all, 0.3s;
+        background-image: url(../imgs/design.svg);
+      }
+
+      
+
+      h1{
+        color: #f8f9fa;
+      }
+      p{
+        color: #f8f9fa;
+      }
+
+      .header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: -webkit-linear-gradient(bottom, #212529 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+        background-image: linear-gradient(to top, #212529 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+      }
+
+      .header .header-content .header-title .up {
+        font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+        font-weight: 500;
+        color: #ffffff86;
+        margin-bottom: 5px;
+        position: relative;
+        display: block;
+      }
+       
+      .testimonial-card-body {
+        text-align: left;
+        border: 0px #007ffd;
+        background: #000000;
+        padding: 20px 20px 20px 60px;
+        border-radius: 30px 0;
+      }
+
+      .footer a, .footer p {
+        color: #f8f9fa;
+        padding: 4px 0;
+        display: inline-block;
+        margin: 0;
+      }
+
+      
+
 }
 
 body {
@@ -11135,9 +11221,9 @@ p {
 .service-card {
   position: relative;
   min-height: 230px;
-  border: 1px solid #dee2e6;
+  border: 2px solid #dee2e6;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 30px 0px;
 }
 
 .service-card .body {
@@ -11385,7 +11471,7 @@ p {
 }
 
 .testimonial-card-img {
-  background: #fff;
+  /* background: #fff; */
   padding: 4px;
   width: 90px;
   height: 90px;
@@ -11397,7 +11483,7 @@ p {
   border: 1px solid #dee2e6;
   background: #fff;
   padding: 20px 20px 20px 60px;
-  border-radius: 0;
+  border-radius: 30px 0;
 }
 
 .testimonial-card-title {
@@ -12084,6 +12170,7 @@ pre .code {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url(../imgs/header.jpg);
+  /* background-image: url(../imgs/25842.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -12142,7 +12229,7 @@ pre .code {
 }
 
 .animate__animated.animate__headShake {
-  --animate-duration: 8s;
+  --animate-duration: 10s;
 }
 
 /* change the color position here */
@@ -12150,6 +12237,9 @@ pre .code {
   /* color: yellow; */
 }
 
+.btn-cv {
+  border-radius: 12px;
+}
 
 .header .header-content .btn {
   position: relative;
