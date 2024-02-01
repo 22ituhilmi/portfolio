@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -25,19 +30,30 @@
                     <a class="link" href="#about">About</a>
                 </li>
                 <li class="item">
+                    <a class="link" href="#skill">Skill</a>
+                </li>
+                <li class="item">
                     <a class="link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
+                    <a class="link" href="#experience">Experience</a>
+                </li>
+                <!-- <li class="item">
+                    <label>
+                        <input type="checkbox" name="" id="switch-dark">
+                        <span><ion-icon name="bulb-outline"></ion-icon></span>
+                    </label>
+                </li> -->
+                <li class="item">
+                    <span onclick="darkMode()" style="cursor: pointer; display: none;" class="link toggle-btn pe-auto" id="btn">🌙</span>
                 </li>
                 <li class="item">
-                    <a class="link" href="#blog">Blog</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
+                    <span onclick="myFunction()" style="cursor: pointer;" class="link toggle-btn pe-auto" id="clickbtn">🌙</span>
 
+                </li>
+                
             </ul>
+            
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
                   <div class="hamburger-inner"></div>
@@ -46,16 +62,17 @@
         </div>          
     </nav><!-- End of Page Navbar -->
 
-    <!-- page header -->
+    <!-- page header --> 
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
                 
                 <span class="up">Hello!</span>
-                <span class="down"  >I am Hilmi</span><a class="iconthumb" style="margin-left: 5px;" href="">👋</a>
+                <span class="down">I am Hilmi</span>
+                <a class="animate__animated animate__headShake animate__faster iconthumb animate__loop" style="margin-left: 5px;" href="#about">👋</a>
             </h1>
-            <p class="header-subtitle">Jr. Content Writer</p>            
+            <p class="header-subtitle">Jr. <span class="auto-type jobs-position"></span></p>            
 
             <!-- <button class="btn btn-primary" >Visit My Works</button> -->
         </div>              
@@ -77,14 +94,14 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste 
                         <br>culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!              
                     </p>
-                    <button style="float: right; padding-inline: 20px;" class="btn-rounded btn btn-primary mt-4">Download CV</button>
+                    <button style="float: right; padding-inline: 20px;" class="btn btn-primary mt-4 btn-cv">Download CV</button>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
     <!-- service section -->
-    <section class="section" id="service">
+    <section class="section" id="skill">
         <div class="container text-center">
             <p class="section-subtitle">What Can I Do ?</p>
             <h6 class="section-title mb-6">Skills</h6>
@@ -93,16 +110,16 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img id="writericon" src="assets/imgs/writer.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
                             <h6 class="title">Content Writer</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam molestias dolorem iste quod.</p>
+                            <p class="subtitle">Velit culpa adipisci excepturi consequuntur itaque in nam molestias dolorem iste quod.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon write">
                             <h6 class="title">UI/UX</h6>
                             <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam molestias dolorem iste quod.</p>
                         </div>
@@ -111,8 +128,8 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/toolbox.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Placeat</h6>
+                            <img src="assets/imgs/office.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Microsoft Office</h6>
                             <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam molestias dolorem iste quod.</p>
                         </div>
                     </div>
@@ -120,8 +137,8 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/analytics.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Iusto</h6>
+                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Design</h6>
                             <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam molestias dolorem iste quod.</p>
                         </div>
                     </div>
@@ -269,32 +286,46 @@
     </section> <!-- end of section -->
 
     <!-- testimonial section -->
-    <section class="section" id="testmonial">
+    <section class="section" id="experience">
         <div class="container text-center">
-            <p class="section-subtitle">What Think Client About Me ?</p>
-            <h6 class="section-title mb-6">Testmonial</h6>
+            <p class="section-subtitle">Where have I worked?</p>
+            <h6 class="section-title mb-6">Experience Work</h6>
 
             <!-- row -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
                             <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                            <p class="testimonial-card-subtitle">At the beginning of 2020 I worked at PT Evoluzione Tire as a contract employee. There I served as a quality control operator.</p>
+                            <h6 class="testimonial-card-title">PT. Evoluzione Tytre</h6>
+                            <p class="section-subtitle">Quality Finishing Operator</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
                             <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                            <p class="testimonial-card-subtitle">In 2023, while on holiday from college, I worked as a data entry at BPS in the 2023 Agricultural Census (ST2023) project.</p>
+                            <h6 class="testimonial-card-title">Badan Pusat Statistik</h6>
+                            <p class="section-subtitle">Data Entry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">In early 2024 I took part in the government's MBKM program and became a junior content writer at Halodoc.</p>
+                            <h6 class="testimonial-card-title">Halodoc</h6>
+                            <p class="section-subtitle">Jr. Content Writer</p>
                         </div>
                     </div>
                 </div>
@@ -350,8 +381,10 @@
                 </div>
             </div><!-- end of blog wrapper -->
 
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
+        </div>
+        <!-- end of container -->
+    </section>
+    <!-- end of blog section -->
 
     <!-- contact section -->
     <section class="section" id="contact">
@@ -386,6 +419,7 @@
                               
                 <a href="https://www.linkedin.com/in/hilmiazizr" target="_blank" class="link"><i class="ti-linkedin"></i></a>
                 <a href="https://www.instagram.com/22ituhilmi" target="_blank" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://www.instagram.com/22ituhilmi" target="_blank" class="link"><i class="ti-microphone"></i></a>
                 
             </div>
         </footer>
@@ -401,5 +435,46 @@
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 
+    <!-- Typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings : ["Content Writer", "Designer", "Youtuber"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            loop : true,
+        })
+
+
+    </script>
+
+    <script>
+            let btn = document.getElementById("btn");
+            // var x = document.getElementById("btn");
+
+            
+
+            btn.onclick = function(){
+                document.body.classList.toggle("dark-theme");     
+                
+            }
+
+    </script>
+
+<script>
+    function myFunction() {
+        btn.onclick();
+      var x = document.getElementById("clickbtn");
+      if (x.innerHTML === "🌙") {
+        x.innerHTML = "☀️";
+      } else {
+        x.innerHTML = "🌙";
+        
+      }
+    }
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
